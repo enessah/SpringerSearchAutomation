@@ -11,6 +11,8 @@ public class Search {
   private String baseUrl;
   private StringBuffer verificationErrors = new StringBuffer();
 
+  //---------Code could be refactored to use PageObject Pattern 
+  //         instead to decouple page objects from testing logic
   @Before
   public void setUp() throws Exception {
     driver = new FirefoxDriver();
